@@ -9,8 +9,13 @@
 <link rel="shortcut icon" href="">
 <link href="style.min.css" rel="stylesheet">
 <style>
+
+body{
+	background-color:whiteSmoke;
+	}
+
 nav{
-	background-image: linear-gradient(-180deg, rgba(98,149,201,1.00) 0%, rgba(51,92,152,1.00) 100%);
+	background-color: rgba(51,92,152,1.00);
      	padding:5pt;
 	margin:10px;
 	height:80px;
@@ -29,14 +34,14 @@ nav ul a{
       background-repeat: no-repeat;
       text-align: center;
       height: 100vh;
-    }
+      }
 
 #banner header {
       padding-top: 10vw;
       padding-left: 20px;
       padding-right: 20px;
       margin: auto auto;
-    }
+     }
   
 #banner header h3 {
       color: #315A97;
@@ -62,7 +67,8 @@ nav ul a{
      }
 
 #banner .get-started {
-     background-image: linear-gradient(-180deg, rgba(98,149,201,1.00) 0%, rgba(51,92,152,1.00) 100%);	
+     border: 2px white solid;
+     background-color: rgba(51,92,152,1.00);
      height:50px;
      width:200px;
      color:white;
@@ -71,7 +77,7 @@ nav ul a{
 #about {
 	margin:10px;
 	margin-top:60px;
-        background-image: linear-gradient(-180deg, rgba(98,149,201,1.00) 0%, rgba(51,92,152,1.00) 100%);
+	background-color: rgba(51,92,152,1.00);
         box-shadow: inset 0 4px 0 0 rgba(195,200,205,0.50);
 	color:white;
 	padding:20pt;
@@ -90,7 +96,7 @@ nav ul a{
     }
 
 @media (min-width: 992px) {
-      #about .container {
+      #about .container{
           width: 470px;
           text-align: right;
       }
@@ -101,22 +107,60 @@ nav ul a{
     }
 
 @media (min-width: 1200px) {
-      #about .container {
+      #about .container{
           width: 558px;
           text-align: right;
       }
 
       #about video{
   	  height:330px;
-  	  width:450px;
+  	  width:490px;
 	}  	
     }
 
-#about #video-container{
-	
+#about div#video-container{
+	padding:1pt;
 	background:black;
 	text-align:center;
 	}
+
+
+#total{
+	padding-top:3em;
+	padding-bottom:3em;
+	}
+
+.total-value{
+	color: rgba(51,92,152,1.00);
+	font-size:2em;
+	}
+
+.total-value{
+	}
+
+#advantages{
+	float:center;
+	padding:3em;
+	background-color: aliceBlue;
+	}
+
+#advantages h1{
+	
+	}
+
+#advantages h3{
+	color:gray;	
+	}
+
+#advantages img{
+	height:50px;
+	width:50px;	
+	}
+
+#advantages .unique-factors{
+	text-align:left;
+	}
+
 </style>
 </head>
 <body>
@@ -145,7 +189,7 @@ nav ul a{
 	<div id='b-d'>
 		<b>Be Part of the revolution</b>
 		<div>
-		<a href="#"><input class='get-started' type='button' value="Get Started"></button></a>
+		<a href="#"><label class='btn btn-primary get-started'>Get Started</label></a>
 		</div>
 	<div>
 </div>
@@ -156,8 +200,8 @@ nav ul a{
         <div class="container">
         <h2>About EngineOne</h2></br>
         <p>We live very demanding and high-paced lives in a world where the race to increase efficiency is always on. At Lepsta, we have dedicated ourselves to solving technological problems that help people be more effective in what they do in their daily lives.</br>
-	</br></br><a href="#"><input class='get-started' type='button' value="Get Started"></button></a>
-        </p>
+	</br></br><a href="#"><button class='btn btn-primary get-started'>Get Started</button></a>
+       </p>
         </div>
       </div>
       <div class="col-md-6">
@@ -170,6 +214,99 @@ nav ul a{
     </div>
 </div>
 
+<div id='total'>
+	<div class='row'>
+		<div class="col-md-4 col-lg-4">
+			<b id='total-developers' class='total-value'>
+				13.435
+			</b>
+			<p class='total-hint'>
+			 	Developers have joined. 
+			</p>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<b id='total-software' class='total-value'>
+				1.943
+			</b>
+			<p class='total-hint'>
+			 	Sofware packages have been developed. 
+			</p>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<b id='total-topics' class='total-value'>
+				6.346
+			</b>
+			<p class='total-hint'>
+			 	Topics have been discussed. 
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id='advantages'>
+
+<h1>Competitive Advantages</h1>
+<h3>Unique factors give us competitive edge</h3>
+<div class='unique-factors'>
+	<div class='row'>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>Offline First</h2>
+			<p>EngineOne's revolutionary Self Organising Network allows teams to seamlessly collaborate online and offline</p>	
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>Proactive</h2>
+			<p>Unlike other solutions, EngineOne alerts you of potential issues before they become big problems.</p>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>Extandable</h2>
+			<p>EngineOne's revolutionary Self Organising Network allows teams to seamlessly collaborate online and offlin</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>Customisable</h2>
+			<p>EngineOne can be customised to fit with any company's workflow.</p>	
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>More Integrations</h2>
+			<p>EngineOne integrates with all the major task managers, CI tools and has an API for easy integration with 3rd Party tools</p>	
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<img src="" alt=""></img>
+			<h2>Community</h2>
+			<p>There is no product like EngineOne! But to make being first to market an actual advantage, we are building a big developer community around EngineOne.</p>	
+		</div>
+	</div>
+</div>
+
+<a href='#'><label class='btn btn-primary get-started'><b>Get Started</b></label></a>
+
+</div>
+
+<div style='padding:3em;font-size:0.9em'>
+<div class="row">
+<div class="col-sm-9 col-md-6 col-lg-7">
+	<ul class='nav navbar-nav navbar-left'>
+		<li><a href=''>Contacts</a></li>
+		<li><a href=''>Provacy</a></li>
+		<li><a href=''>Terms of Use</a></li>
+		<li><a href=''>Accessibility</a></li>
+	</ul>
+</div>
+<div class="col-md-6 col-lg-4">
+	<ul class='nav navbar-nav navbar-right'>
+		<li><a href=''>C</a></li>
+		<li><a href=''>F</a></li>
+		<li><a href=''>T</a></li>
+	</ul>
+</div>
+</div>
+</div>
 
 </body>
 
