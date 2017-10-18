@@ -90,9 +90,12 @@ nav ul a{
           text-align: right;
       }
       #about video{
-  	  height:110px;
-  	  width:290px;
-	}	
+  	  height:340px;
+  	  width:360px;
+	}
+      #about div#video-container{
+	  height:350px;
+	}		
     }
 
 @media (min-width: 992px) {
@@ -103,7 +106,7 @@ nav ul a{
       #about video{
   	  height:220px;
   	  width:370px;
-	}
+	}	
     }
 
 @media (min-width: 1200px) {
@@ -115,15 +118,13 @@ nav ul a{
       #about video{
   	  height:330px;
   	  width:490px;
-	}  	
-    }
+	}  
+     }
 
-#about div#video-container{
-	padding:1pt;
-	background:black;
-	text-align:center;
+#about video{
+	margin-top:40px;
+	margin-left:-50px;
 	}
-
 
 #total{
 	padding-top:3em;
@@ -163,9 +164,11 @@ nav ul a{
 
 </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navBar">
 
-<nav class="navbar">
+
+
+<nav class="navbar navbar-fixed-top navbar-toggleable-xs">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/">
@@ -180,8 +183,9 @@ nav ul a{
 		</ul>
 	</div>
 </nav>
+</div>
 
-<div class="d-flex justify-content-center" id="banner">
+<div id="banner">
         <header>
           <h1>Sync <b>Code</b> and <b>Teams</b></h1>
           <h3 class='gray'>EngineOne is a Code Sync Service helps Software Developers spend</br> more time coding and less time managing code by automating </br>their version control workflow.</h3>
@@ -196,7 +200,7 @@ nav ul a{
 
 <div id='about' class="container-fluid section text-white">
   <div class="row">
-      <div class="col-md-6">
+      <div class="col-xs-7 col-md-6">
         <div class="container">
         <h2>About EngineOne</h2></br>
         <p>We live very demanding and high-paced lives in a world where the race to increase efficiency is always on. At Lepsta, we have dedicated ourselves to solving technological problems that help people be more effective in what they do in their daily lives.</br>
@@ -204,19 +208,18 @@ nav ul a{
        </p>
         </div>
       </div>
-      <div class="col-md-6">
-	<div id='video-container' class='container'>
-      		<video class='about-video' controls>
-			<source id='video' src="" type="video/mp4">
+      <div class="col-md-6 col-xs-5">
+		<video class='about-video' controls='controls'>
+			<source id='video' src="" type='video/mp4'>
 		</video>
-	</div>
+	
       </div>
     </div>
 </div>
 
 <div id='total'>
 	<div class='row'>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<b id='total-developers' class='total-value'>
 				13.435
 			</b>
@@ -224,7 +227,7 @@ nav ul a{
 			 	Developers have joined. 
 			</p>
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<b id='total-software' class='total-value'>
 				1.943
 			</b>
@@ -232,7 +235,7 @@ nav ul a{
 			 	Sofware packages have been developed. 
 			</p>
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<b id='total-topics' class='total-value'>
 				6.346
 			</b>
@@ -249,34 +252,34 @@ nav ul a{
 <h3>Unique factors give us competitive edge</h3>
 <div class='unique-factors'>
 	<div class='row'>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>Offline First</h2>
 			<p>EngineOne's revolutionary Self Organising Network allows teams to seamlessly collaborate online and offline</p>	
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>Proactive</h2>
 			<p>Unlike other solutions, EngineOne alerts you of potential issues before they become big problems.</p>
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>Extandable</h2>
 			<p>EngineOne's revolutionary Self Organising Network allows teams to seamlessly collaborate online and offlin</p>
 		</div>
 	</div>
 	<div class='row'>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>Customisable</h2>
 			<p>EngineOne can be customised to fit with any company's workflow.</p>	
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>More Integrations</h2>
 			<p>EngineOne integrates with all the major task managers, CI tools and has an API for easy integration with 3rd Party tools</p>	
 		</div>
-		<div class="col-md-4 col-lg-4">
+		<div class="col-xs-4 col-md-4 col-lg-4">
 			<img src="" alt=""></img>
 			<h2>Community</h2>
 			<p>There is no product like EngineOne! But to make being first to market an actual advantage, we are building a big developer community around EngineOne.</p>	
@@ -288,9 +291,10 @@ nav ul a{
 
 </div>
 
-<div style='padding:3em;font-size:0.9em'>
+<div style='padding:3em;font-size:0.9em;text-align:left'>
 <div class="row">
-<div class="col-sm-9 col-md-6 col-lg-7">
+<div class="col-xs-9 col-md-6 col-lg-7">
+	
 	<ul class='nav navbar-nav navbar-left'>
 		<li><a href=''>Contacts</a></li>
 		<li><a href=''>Provacy</a></li>
@@ -298,7 +302,7 @@ nav ul a{
 		<li><a href=''>Accessibility</a></li>
 	</ul>
 </div>
-<div class="col-md-6 col-lg-4">
+<div class="col-xs-3 col-md-6 col-lg-4">
 	<ul class='nav navbar-nav navbar-right'>
 		<li><a href=''>C</a></li>
 		<li><a href=''>F</a></li>
